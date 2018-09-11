@@ -1,0 +1,16 @@
+DOM : document object model
+
+a structure make html good to organize.
+a JavaScript thing
+document.querySelector('# or . or ??')  #有（）
+document.body.innerHTML = '' change something. #没有（）
+document.getElementById('id') #有（）
+document.querySelector().style.backgroundColor = '' # background-color= #没（）有=
+xx.id = '' set id  #没（） 有=
+document.createElement("") create tags #有（）
+.appendChild(xx) append some structure's child #有（）
+.removeChild(xx) remove #有（）
+.onclick = function() use a function for click button or whatever #没（） 有=
+.firstChild the first child of whatever #没（） 没=
+.parenNode something's root #没（） 没=
+
