@@ -1,0 +1,60 @@
+JavaScript:
+
+console.log();  same as print() 
+// /**/   same as C or java comments
+specil data type: undefined, symbol, object
+	undefined is not null
+	object collections of related data
+same math operator
+same string + method but not like python's intelligent
+"".length  with no () after that which means that is not a method it is a "prototype"
+"".toUpperCase() 
+"".trim() remove all spaces
+Math.random() 0~1
+Math.floor(1.5) return 1
+Math.ceil(1.5) return 2
+Number.isInteger(100) return true
+in this language, uppercase or lowercase both ok
+
+JavaScript: variable
+
+var : pre-ES6 version code. too many restricts.init is undefined not NULL #变量
+let : ES6 version code. better than var. init is undefined not NULL#变量
+const: ES6 code. constant variable can't change. can't init#定量
+++ -- += -= same as C C++ java python
+use `` the code on the left of 1 and ${variable} to easy code strings.
+typeof is a "prototype" means no () 
+
+JavaScript: condition
+
+if(){} else if(){} else{} 
+=== !==   three are three =
+&& || ! same as java
+let x = a || 'b'   #如果 b是false 那x就赋值a    如果a是false x就赋值为b
+x ? a : b   ternary operator #三元操作符 x等于if(x)  a 是if条件  b是else条件
+switch(){case a: case b: default:} #跟java差不多 也可以用break提高性能
+
+JavaScript: function
+
+function abc(x){} same as java
+abc(?) call function
+function can init something for someone call it have no paraments
+function should have return 
+inside of function could call other functions
+--------------------------------------------------------------------
+function abc(x){
+	return ;                   #普通形态
+}
+const xyz=abc(??);
+--------------------------------------------------------------------
+const xyz = function (x){	   #缩小了一点点
+	return;
+}
+---------------------------------------------------------------------
+const xyz = x =>{
+	return ;		   #又缩小了一点点 注意 () => 没参数的时候还是要()
+}
+---------------------------------------------------------------------
+const xyz = x =>  ;	   #又缩小了一点点 注意 return  {} () 没参数同上 
+---------------------------------------------------------------------
+
