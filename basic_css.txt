@@ -1,0 +1,125 @@
+<h2 style="color:red">		can be change in HTML files use style=""
+
+<style>
+  h2{color:blue;}
+</style>
+<h2>???</h2>			or this way is ok too
+
+<style>
+  ."class"{}
+</style>
+<h2 class=""></h2>		."class" can choose a class like .image .text
+
+<style>
+  h2{font-size:30px;}
+</style>			inside of {} font-size font-family color background
+				image width border-color border-width border-style border-radius
+				padding-left(right,top,bottom)
+				margin-left(right,top,bottom)
+padding: 40px 30px 20px 10px	
+				this means 40px for top 30px for right 20px for bottom
+				yes just like a clockwise
+				same as margin
+				but remember there are NO , or ; between them
+				
+<link href="" rel="stylesheet" type="text/css">
+				this is the link for HTML file and CSS file
+				or it can be use for some internet sources about style
+
+<style>
+  h2{
+    font-family:monospace, ubuntu;
+}
+</style>			this means there are two fonts canbe use
+
+<h2 class="class1 class2">	two classes is supported by using a SPACE
+
+
+<style>
+  #???{background-color= green;}  
+</style>
+<h2 id="???"></h2>		use # to describe the id we choose
+
+<style>
+  .???{background-color= silver;}
+</style>
+<h2 class="???"></h2>		use . to describe the class we choose
+
+<style>
+  [type="radio"] {}
+</style>			this is for "type" for example in <input>
+
+<style>
+  element{}
+</style>			this is for "element"
+
+<style>
+  [type="checkbox"] {
+    padding: 1.5em;
+}
+</style>			the 1.5em is a relative
+				em is base on father's font-size
+				rem base on firefox's font-size lol
+
+<style>
+  .blue-text{color: blue;}
+  .pink-text{color: pink;}
+</style>
+<h1 class="blue-text pink-text"><h1>
+				this will show pink case the style use .pink-text below blue
+				if h1 class="pink blue" is the same use pink
+
+increse a id for it
+  #orange-text{color: orange}
+				this will show orange wherever # put
+				case id in css is much heavier than class
+
+increase a inline style for <h1 style="color: white;">
+				this will show white whatever things in css
+				case inline style is much heavier than css
+
+increase a !important for .blue-text
+  .blue-text{color: blue !important;}
+				this will show blue
+				case !important is the most heavier
+				remember the SPACE and !
+
+decimal				十进制		0~9	(1~10)
+hexadecimal			十六进制	0~9 A~F (1~16)
+binary				二进制
+use 6 hexadecimal digits to represent colors like #000000(black) #00ff00 called RGB color system
+
+RGB system is red(R) green(G) blue(B) can vary(变化) 16million colors
+#FFA500 there are six numbers of RGB
+FF is the value of red(topest) A5 is green 00 is blue(lowest)
+#F00 means FF0000 
+
+body{
+      background-color: rgb(255,165,0);
+}				RGB also can use 0~255 instead of hexadecimal 16*16=256(0~255)
+
+<style>
+  .penguin {
+    --penguin-skin: gray;
+  } 
+  .penguin-top {
+    background-color: var(--penguin-skin, black);
+  }
+</style>			-- is a variable
+				use var(--) to set this variable;
+				the second one , black is backup choose if var is not exist
+				for example the spell of variable etc.
+<style>
+  :root {
+    
+  }
+</style>			a container for entire(整个) css
+				easy to overwrite :root in specific element
+
+<style>
+  @media(max-width:300px) {
+	  :root{
+		--penguin-size: 200px;
+	  }
+  }
+</style>			use @media can easyly overwirte the :root
