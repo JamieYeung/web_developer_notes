@@ -1,0 +1,75 @@
+<h1></h1>		biggest font title
+<h6></h6>		smallest font title 
+<p></p>			a paragraph
+<!-- -->		a comment
+<header></header>
+<footer><footer>
+<nav></nav>
+<div></div>
+<video></video>
+<article></article>
+<section></section>	many descriptive tags
+
+<img src="" alt="">	AUTO CLOSE TAG
+			src: source where
+			alt: show something(text mostly) when img des not work
+			by the way alt="" must have even there is nothing there.
+			also this tag can be in everywhere like <a></a>
+
+<a href="" target="">???</a>	
+			links for a text ???
+			href="": source for link external or internal like # for a id
+			target="": what way to open the link like _blank means open new window
+			also this tag can be in <p></p> or everywhere
+			also href="" could be a dead link with only #
+<ul>
+  <li>???</li>
+  <li>???</li>
+</ul>			a list for 2 bullet points or we call this unordered list
+<ol>
+  <li>???</li>
+  <li>???</li>
+<ol>			a list for 2 numbers points or we call this ordered list
+
+<input type="???" required placeholder="">
+			AUTO CLOSE TAG
+			a input bar type="" is the type for input usually type is text	
+			placeholder="" shows backgroud text like "type something here"
+			required means you must put something into it
+			usually use in where you add an button with it
+
+<form> action="/url-where-you-want-to-submit-form-data"</form>
+			send things to database
+			it canbe input or something
+
+<button type="">???</button>
+			type="" default value is submit
+			??? something you want to show in button
+
+<label for="indoor">
+  <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+</label>		
+			label label label label NOT lable
+			label usually use in form which send somthing to database
+			"for" for lable is the connection with which id
+			type="radio" choose one in many
+			name=""   a sort by different checkboxes or radio
+			"Indoor" which show in page even there is no close tag with input
+			type of input can be "checkbox" which is a box can select more than one
+			you can add a checked into the input tag just like required
+			checked means select one(which have checked) in default(when pages open)
+
+<div></div>		seperat things~~~
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+  </body>
+</html>			this is the main format for html5
+			<title> is show in your browser windows head not the page head
+			<title> is in <head>
+			<body>  is the body of all pages like title in page paragraph on page etc
+
