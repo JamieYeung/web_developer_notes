@@ -1,0 +1,51 @@
+"Accessibility" means web interface could be understood
+<img src="???" alt="">		the blank of alt make img crash icon down
+<div></div>			groups content
+<section></section>		groups related content
+<article></article>		groups independent, self-contained content
+<header></header>		the head of page NOT browser header
+<nav></nav>			navigation #导航
+<footer></footer>		the foot of page
+<audio id="" controls>
+  <source src="" type="audio/???">
+</audio>			notice controls type="audio/???" ??? could be ogg mpeg etc.
+
+<figure>
+  <img src="" alt="">
+  <br>
+  <figcaption>
+  ?????????
+  </figcaption>
+</figure>			better than a <p>tag for a description
+
+<label for="email">Email:</label>
+<input type="text" id="email" name="email">
+				notice for="" id="" name=""
+				name is not match anything
+				id and for is connected
+
+<fieldset>
+  <legend></legend>
+</fieldset>			make a circle for whatever you want
+				<legend> is NOT necessary when the choices are self-explanatory
+				<legend> make things on the circle
+
+<input type="date" id="" name="">
+				date shows yyy/mm/dd
+
+<time datetime="2018-09-23"></time>
+				more readable when use some informal format
+
+<button accesskey="b">BUTTON</button>
+				notice the accesskey can use in <a> <button> whatever
+				accesskey is a shortcut make thing focus on the mid of view
+
+<div tabindex="0">WTF</div>
+				tabindex use on <div> <span> <p>
+				tabindex make a highlight circle
+				also tabindex make a CSS preudo-class :focus
+				the value of tabindex is 0, 1, 2, 3 etc
+				which means the focus level 0 first
+
+A little bit harder now TRY HARDER.
+

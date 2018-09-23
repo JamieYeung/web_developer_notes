@@ -1,0 +1,128 @@
+CSS is major on this view
+text-align:center;		center,right,lift,justify
+width:
+height:
+
+font-weight: bold;
+<strong></strong>		bold
+
+text-decoration:underline;
+<u></u>				underline
+
+font-style: italic;
+<em></em>			italic NOTICE the different between HTML em and CSS em&rem
+
+text-decoration: line-through;
+<s></s>				line through the text
+
+<hr>				A line #self-closing tag
+
+rgba()				rgb + alpha/opacity #不透明度
+
+box-shadow: a, b;		a = 0 10px 20px rgba(),  b = 0 20px 20px rgba()
+				0px offset-x
+				10px offset-y
+				20px blur-radius(optional) #模糊半径
+				spread-radius(optional) #分散半径
+				rgba() shadow color
+				why a & b
+
+opcity: .7;			opcity
+
+text-transform: lowercase;
+				value could be
+				lowercase
+				uppercase
+				capitalize
+				initial: default value
+				inherit: inherit parent element
+				none: use original text
+
+font-size: 10px;
+font-weight: 200;		size & weight NOTICE the value
+
+line-height: 20px;		space between two line text
+
+a:hover{color:blue;}		preudo-class when mouse put on a element
+
+position: relative;
+top: 20px;			position value relative, absolute,fixed
+				relative means relative to original position space will remain
+				absolute means move and no space remain
+				fixed is a base on browers absolute
+				top could change to bottom, left, right
+				or combine top:20px; bottom:20px;
+				
+float: right			move the content flexibility combine to right,left
+				usually use with width property to move horizontal space
+
+z-index: 2;			highest value have highest priority cover the others
+
+marigin: auto;			set horizon position auto
+
+background-color: #fff
+background-color: hsl(0,100%,50%)
+background-color: rgb(255,255,255)
+				three way to set color (and a rgba())
+				hexdecimal way #f0f = #ff00ff
+				hsl(hue#光谱360, staturation#灰度， lightness#亮度)
+				rgb() three color mixed(max is 0~255 256 color for each)
+
+background: linear-gradient(90deg, red, yellow, rgb(204,204,255));
+				set a #渐变色 can use rgb hsl hexdecimal
+				
+background: repeating-linear-gradient(90deg, yellow 0px, blue 10px);
+				#重复渐变色
+
+background: url(https://???.png);
+				use url
+
+transform: scale(1.5);		1.5 times for original scale
+
+transform: skewX(-30deg);
+transform: skewY(30deg);
+transform: rotate(30deg);
+				twist base X & Y axis or use rotate twist base on mid-point
+
+::before
+::after				preudo-classes make things before and after img or whatever
+
+a::before{
+  content: "";			content MUST quired
+}	
+
+#a{
+  animation-name: wtf;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-out
+}
+@keyframes wtf {
+  0% {
+    background-color: blue;
+    top: 10px;
+    left: 20px;
+    opacity: .5;
+  }
+  100% {
+    background-color: yellow;
+    bottom: 20px;
+    right: 10px;
+    opacity: .8;
+  }
+}				duration time of the animation
+				fill-mode #动画填充模式设定
+				iteration-count how much times for animations
+				timing-function the way animation goes like ease-in&out linear
+				OR cubic-bezier(0.25,0.25,0.75,0.75) look down for more details
+				@keyframes also have position settings but NOTICE the different
+				and the opacity setting value could be infinite
+
+cubic-bezier(.25, .25, .75, .75)
+				p0, p1, p2, p3
+				p0 must be 0,0 and not show on value
+				p3 must be 1,1 and not show on value
+				p1 x&y shows on first 2 values
+				p2 x&y shows on last 2 values
+				(p1x, p1y, p2x, p2y)
