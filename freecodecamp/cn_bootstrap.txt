@@ -1,0 +1,40 @@
+CN freecodecamp notes
+bootstrap是一个根据屏幕大小调整html css javascript的开源框架
+大部分功能用class来实现
+
+class="container-fluid"				自适应流体
+<img class="img-responsive">			自适应调整宽度多用于图片
+
+<button class="btn">				bootstrap风格按钮
+<button class="btn-block">			自动填充按钮宽度
+<button class="btn-primary">			按钮涂装深蓝色 也叫主色按钮
+<button class="btn-info">			按钮涂装浅蓝色 也叫信息色按钮
+<button class="btn-danger">			按钮涂装红色   也叫危险色按钮
+<button class="btn-default">			按钮加一个带小阴影的圆边
+
+<div class="row">				定义一块区域为表格的行数
+<div class="col-xs-4">				定义一块区域为表格的列数
+						xs是大小比例 可以是md
+						数字是占多少列宽
+
+<span class="text-danger">			
+<h3 class="text-center">			和上面差不多 字红色和字剧中
+			
+
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+<i class="fa fa-info-circle"></i>		这是一些awesome字体或者小图片
+						其中有 fa-info-circle 圈圈里面一个i
+						fa-thumbs-up 一个赞的图标
+						fa-trash 一个垃圾桶的图标
+						fa-paper-plane 一个纸飞机的图标
+
+<input class="form-control">			
+						表单基本控制导入
+
+<div class="well">				
+						视觉深度感 差不多是小阴影的意思吧
+
+不光是class 可以用bootstrap id 也可以哦
+<div class="well" id="center-well">		还可以是left-well, right-well
+
+
