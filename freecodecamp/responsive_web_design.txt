@@ -1,0 +1,36 @@
+setting the major devices for your web
+
+@media (max-width: 100px) {
+  
+}				set the max size for the page
+
+img {
+  max-width: 80%;
+  display: block;
+  height: auto;
+}				the block means set a block for CSS and HTML inline can't change
+				the auto for height means change the height with ratio from width
+
+h2 {
+  width: 10vw;
+  height: 3vh;
+ 
+}				#10vw 是说 视窗大小的百分之10宽度
+				#3vh 是说 视窗大小的百分之3高度
+em
+rem
+vmin
+vmax				#em是根据上级（父类）元素的字体大小计算
+				#1.5em 假设上级元素（浏览器默认字体为14px）1.5×14px=21px;
+				#1.5em 假设上级元素是上面那个 那就是 1.5×21px=31.5px;
+				
+				#rem是root em 所有都根据默认字体大小计算
+				#1.5rem 假设浏览器默认字体14px 1.5×14px=21px;
+				#1.5rem 假设上级元素是上面那个 那还是1.5×14px=21px;
+				
+				#vmin 就是取高和宽中小的那个来计算
+				#vmax 就是取高和宽中大的那个来计算
+				#假设浏览器高1000px 宽800px
+				#2vmin= 800×0.2    2vmax=1000×0.2
+				
+				#这些都是单位（包括vw和vh） 不代表任何一个具体宽高
