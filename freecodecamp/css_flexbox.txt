@@ -1,6 +1,7 @@
 flexbox is a mode like bootstrap
 Web UI has two components visual elements(color,fonts,images) and position elements
-both flexbox & bootstrap are layout modes
+both flexbox & grid & bootstrap are layout modes
+first two were css3 inside mode  bootstrap was 3rd party
 
 #box {
   display: felx;				auto set layout
