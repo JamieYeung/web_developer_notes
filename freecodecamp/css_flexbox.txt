@@ -1,0 +1,66 @@
+flexbox is a mode like bootstrap
+Web UI has two components visual elements(color,fonts,images) and position elements
+both flexbox & bootstrap are layout modes
+
+#box {
+  display: felx;				auto set layout
+}
+
+#box {
+  flex-direction: colunm-reverse;		reverse by column or row
+}
+
+#box {
+  flex-direction: row;				align by column or row
+}
+
+#box {
+  justify-content: center;			
+}						
+						value could be 
+						flex-start item to start position
+						flex-end  item to end position
+						space-between item have same spaces
+						space-around item have big mid space
+
+#box {
+  align-items: flex-start;			same as justify-contetn
+}						flex-start & end
+						center
+						stretch stretch items fill the flex-container
+						baseline align items to baseline
+
+#box {
+  flex-wrap: nowrap;				wrap #包裹
+}						extra items will go to new row or column
+						nowarp default value no wrap items
+						wrap wraps items from left-to-right with row
+								or top-to-bottom with column
+						wrap-reverse	right-to-left & bottom-to-top
+						
+#box {
+  flex-shrink: 3;				higher number the smaller it is
+}						shrink #收缩 这里也是个比例的意思
+						2 have the half space of 1
+						3 have the 1/3 space of 1
+
+#box {
+  flex-grow: 3;					higher number the bigger it is
+}						grow is the reverse of shrink
+						
+#box {
+  flex-basis:auto;				use px, em, % ,rem etc. for its value
+}						basis setting before setting shrink and grow
+						
+#box {
+  flex: 1 0 10px;				setting grow & shrink & basis together
+}						1 grow 0 shrink 10px basis
+
+#box {
+  order: -2;					set the order of items negitive value can use
+}
+
+#box {
+  align-self: flex-end;				align-self override align-items
+}						when css float, clear, vertical-align don't work
+						
