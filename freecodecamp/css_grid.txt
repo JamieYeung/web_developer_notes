@@ -1,0 +1,78 @@
+grid is a css layout component for easy built complex pages
+grid was design for TWO-dimensional#位面 and flexbox was design for ONE-dimensional
+row #行横向  column #列 纵向
+
+
+.container {
+ display: grid;					use grid layout
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px;		2 columns and each row is 50px;
+}						if template-rows 2rows each column is 50px
+						can use fr, auto, %, values 
+						fr #自动分配剩余的空间 值是比例值 当只有一个
+						#fr的时候 不管是多少都是占用全部
+
+.container {
+  grid-column-gap: 10px;			column & row or just grid-gap
+}						
+
+.container {
+  grid-gap: 10px 20px;				grid-gap set both rows & columns gap
+}						10px is rows 20px is columns
+
+.container {
+  grid-column: 2/4;				values are lines for grid
+}						for example 3 columns have 4 lines
+						4 rows have 5 lines
+						start with line 2 to line 4
+
+.container {
+  justify-self: stretch;			justify horizon#横向 stretch default #拉伸  
+}						center & start(left) & end(right)
+
+.container {
+  align-self: stretch;				justify vertical#纵向 values are the same
+}						
+
+.container {
+  justify-items: center;			justify all items horizon values are the same
+}
+
+.container {
+ align-items: end;				justify all items vertical values are the same
+}
+
+.container {
+  grid-template-areas:
+  "header header header"
+  "advert content content"
+  "footer footer footer"			give labels for all grid 3*3
+}						use . to set empty label for a cell
+						advert#广告 这里说的是广告位
+.container {
+  grid-area: header;				NOTICE different between these two
+}						set the area of a cell NOT LABEL
+
+.container {
+  grid-area: 1/1/2/4;				horizon start/vertical start/hor end/ver end
+}						all the values are line number
+						or row start/column start/row end/column end
+
+.container {
+  grid-template-columns: repeat(2,1fr,50px)20px;
+}						repeat(times, value, value) out-side-value;
+						== 1fr 50px 1fr 50px 20px;
+						times value could be auto-fill
+						auto-fit similar with auto-fill
+						auto-fill keep insert empty things push into
+						auto-fit destory empty things resize to fit
+			
+.container {
+  grid-template-rows: 90px minmax(50px, 1fr);
+}						auto select use min or max with the second row
+						can use repeat() wrap it
+
+
