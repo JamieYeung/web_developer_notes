@@ -4,7 +4,7 @@ both flexbox & grid & bootstrap are layout modes
 first two were css3 inside mode  bootstrap was 3rd party
 
 #box {
-  display: felx;				auto set layout
+  display: flex;				auto set layout
 }
 
 #box {
