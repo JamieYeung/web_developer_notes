@@ -1,0 +1,50 @@
+Javascript
+
+//comment
+/*comment*/ 
+var		variable
+.length		equal to python len().
+.push()		add a new element in array only just the LAST
+.pop()		remove the last element in array only just the LAST
+.shift()	remove the first element in array only just the FIRST
+.unshift()	add a new element in array only just the FIRST
+
+function ***(a,b) {return *;}	
+		create a function with param a & b
+		the return is not MUST but return undefined when there is no return
+console.log("***")	print ***
+
+pseudo code ##伪代码
+
+== & ===	equality operator & strict equality operator
+		three is more strict ex. 3==="3" return false  MUST be 3===3 
+		two will convert the TYPE of value ex. 3=="3"  return true
+!= & !==	not equality operator & strict not equality operator
+
+typeof 3 return 'number'
+typeof '3' return 'string'
+
+if(){
+
+} else if(){
+
+} else{
+
+}
+
+switch (true) {
+  case *:
+	break;
+}
+
+&& ||
+
+objects		##简化版的散列表
+myObj.**	a dot . and the key of elements will recall the value
+myObj[**]	another way to recall something
+
+myObj[**] or myObj.**
+delete myObj.** or myObj[**]
+		add and delete a properties from objects
+
+
