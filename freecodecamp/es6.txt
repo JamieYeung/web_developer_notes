@@ -1,0 +1,111 @@
+ES6 or ECMAScript6 is a standard version of Javascript
+
+New features
+1.Arrow functions	#箭头
+2.Classes		#类
+3.Modules		#模型
+4.Promises		
+5.Generators
+6.let and const		#类似var的常量 和不变量
+
+var, let & const
+var camper = "james"
+var camper = "david" //logs'david'
+camper = "david" //logs'david'
+
+let camper = "james"
+let camper = "david" //throws an error
+camper = "david" //logs'david'
+
+const camper = "james"
+const camper = "david" //throws an error
+camper = "david" //throws an error
+
+			var override let NOT override
+			var can declared TWICE let can declared ONCE
+			global var can change if loop or if are added but global let never change
+			OR var i == var i(in block) BUT let i != let i(in block)
+			const is very similar than let BUT can't change anyway
+			and const usually named by ALLCAPTAIN
+			
+**const still mutable##不稳定 in objects(include array and functions)
+"use strict";
+const s = [4,5,6]
+s = [1,2,3] //throw error
+s[2] = 45; // logs 'const s = [4,5,45]'
+			To mutation the data we use Object.freeze(**) function
+			
+"use strict";		key word for Strict Mode catching common "unsafe" mistakes
+
+
+arrow =>
+const myFunc = function() {
+  return value;
+}
+
+const myFunc = () => {
+  const myVar = value;
+  return myVar;
+}
+
+const myFunc = () => value;
+		
+filter()
+map()
+reduce()
+			filter() filter some conditions in an array or objects
+			map() make the function inside of () to affect every elements
+			reduce() make the function inside of () to do some math between elements
+
+arr1=[1,2,3,4]
+arr2=[3,3,...arr1,3,3]
+			use ... to copy all elements for a array
+
+Math.max.apply(null, arr)	return an array
+Math.max(arr)			return NaN
+Math.max(...arr)		return an array
+
+var voxel = {x:1, y:2, z:3};
+var a = voxel.x;
+var b = voxel.y;
+var c = voxel.z;
+OR
+const{x:a, y:b, z:c} = voxel;		ES5 way is the VAR one ES6 way is the CONST one
+const{x:{a:yes, b: no}} = voxel;	use only x value
+const[a,b,,,c]=[1,2,3,4,5,6]
+console.log(a,b,c); //1,2,5		use , to escape which you don't want to use
+
+const person = {
+  name: 'taylor',
+  sayhi: function(){
+    return 'hello';
+  }
+}
+===
+const person = {
+  name: 'taylor',
+  sayhi(){
+    return 'hello';
+  }
+}
+
+class
+class {
+  constructor(**){
+    this.** = **;
+  }
+}
+
+module
+import {**} from "***"
+export {**}
+export const ** = ""		export{function}	export const variable = "yes"
+
+export {function, variable}	export function and variable(even is not in function)
+
+import *as whatIWant from "***"	import all(*) as function whatIWant from ***
+
+export default			export used if ONLY one value is export
+import ** from "***"		import used if ONLY one value is import
+				there is no {} in there case by DEFAULT EXPORT
+ 
