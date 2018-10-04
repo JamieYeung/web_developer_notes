@@ -1,0 +1,58 @@
+## 常用表达式 regular expression
+## 正则表达式 regex
+
+.test()		myRegex.test(myString) 查看myregex（正则表达式/the/）在不在 mystring 里面 
+		return true/false
+
+/fish|bird|whatever/
+		这里的 | 符号相当于 or
+/fush/i		这里的 i 表示不区分大小写
+.math(/Hello/)	return ["Hello"] 但是只扫描一次 找到一个hello 就return了
+.match(/Hello/g)
+		这里的 g 表示重复多次扫描 return["hello", "hello", "hello"]
+let str = "hug hum huh hut";
+/hu./		这里用.来代替下面的字 跟电脑文件管理的搜索*一个道理
+/b[aeiou]g/ig	找到所有含有 aeiou 的词 i 不区分大小写 g多重搜索
+/b[a-e]g/ig	找到所有 a-e的词 i不区分大小 g多重搜索
+/b[a-z0-9]g/ig	找到所有a-z 0-9的词 不区分大小多重搜索
+/b[^a-z]g/ig	找到所有除了a-z的词
+const str = "abababab"
+/a+/g		return ['a', 'a', 'a', 'a']
+const str = "aabb"
+/a+/g		return ['aa']
+const str = 'aaaaaaaab'
+/Aa*/		return ["aaaaaaaa"] 一般情况下不需要用ig等flag
+const str = "titanic"
+/t[a-z]*i+/	return ["titani"] +greedy模式 （尽量长）
+/t[a-z]*?i/	return ["ti"] ?lazy模式 （尽量短） 也是模糊模式
+
+const str = "my story"
+/story$/	return true 检查最后是不是story
+/\w+/ === /[A-Za-z0-9_]+/
+/\W/ === /[^A-Za-z0-9_]/
+/\d/ === /[0-9]/
+/\D/ === /[^0-9]/
+/\s/ === space
+/\S/ === no-space
+/[^ \r\t\f\n\v]/
+	avoid 
+/a{3,5}h/	3-5次的a 然后再加h
+/a{3,}h/	3次以上的a
+/a{3}h/		只有3次的a
+
+/(?=u)/		check 里面有没有u 但是他不match （只检查你想要他出现的时候出现没）
+/(?!u)/		check 里面有没有u 但是他不match （只检查你不想要他出现的时候出现没）
+/favou?rite/ === /favorite/ or /favourite/
+/^[a-z]{2,}\d*$/i	this means
+			1.\d*$ numbers on the end of username and can be longer
+			2. i can be uppercase or lowercase
+			3. ^[a-z]{2,} two-letter username can only use a-z
+/^(\d+)\s\1\s\1$/	this means
+			1. \1$ 末尾要用(\d+)结束
+			2. \s 空格
+			3. ^() 前面排除所有
+			4. (\d+) 数字 不一定是一位
+
+.replace()	替换文字
+.trim()		去空格
+太难了 还得再复习 看不太懂 还有ES6和javascript
