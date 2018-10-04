@@ -47,4 +47,45 @@ myObj[**] or myObj.**
 delete myObj.** or myObj[**]
 		add and delete a properties from objects
 
+myObj.hasOwnProperty("**")
+		check the ** is myObj's element return boolean
+
+while(i<5)
+for(var i=0;i<5;i++)
+		those are loops
+
+do{}		while check at first but do......while check on last
+while(i<5)	do......while means do it and then check if while is false then stop check at last
+
+Math.random	return 0~1
+Math.floor	if 0.9 return 0
+
+parseInt(string, radix)	
+		transfor to Int	radix ##进制 between 2~36
+
+
+
+if(a>b) {
+  return "a is greater";
+} else {
+  return "b is greater";
+}
+
+OR
+
+return a>b ? "a is greater" : "b is greater";
+		condition ? statement-if-true : statement-if-false;
+
+if(a===b){
+  return "equal";
+} else if(a > b){
+  return "a greater";
+} else {
+  return "b greater";
+}
+
+OR
+return a===b ? "equal" : ? (a>b)? "a greater" : "b greater";
+		condition ? statement-if: condition ? statement-elseif : statement-else
+
 
