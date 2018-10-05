@@ -1,0 +1,11 @@
+str.split('').reverse().join('');
+		split()把字符串分割成array 然后 倒转 然后再合并成字符串
+
+str.split(" ")	以空格为单位分割成array
+
+str += str;	str 可以加减
+
+arr.filter(Boolean)
+		筛选出boolean 为true的值
+
+##极限了，找个时间复习吧 头快炸了
