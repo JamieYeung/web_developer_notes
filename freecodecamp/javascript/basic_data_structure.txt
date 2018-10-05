@@ -1,0 +1,35 @@
+1. array include single-array & multi-array
+arr[0]			start from 0
+
+arr.push()
+arr.unshift()		ADD ()elements to the end(push) & to the front(unshift)
+
+arr.pop()
+arr.shift()		DELETE A elements to the end(pop) & to the front(shift)
+
+arr.splice(1,2)		DELETE any elements from arr[1] and delete 2 elements
+
+arr.splice(1,2,"what")	ADD any elements first delete from arr[1] and delete 2 elements
+			Then add what from arr[1]
+
+arr = [1,2,3,4,5,6]
+arr.slice(1,4)		make a slice from arr[1] to arr[3]
+
+arr = [1,2,3,4,5,6]
+arr2 = [...arr]		copy arr to arr2 use ... which use in ES6
+
+arr = [1,2,3,4,5,6]
+arr.indexOf(7)		return -1 means not exist
+arr.indexOf(2)		return 1 means arr[1] is 2
+arr.indexOf(4)		return 3 THE O of indexOf is CAPITAL
+
+2.objects ## 和散列表类似
+
+let foods ={abc:2, def:3}
+foods['xyz'] = 4	ADD or MODIFY elements for a objects
+delete foods.abc	DELETE elements for a objects
+
+'abc' in foods;		Both two is check the elements in objects return true or false only check
+foods.hasOwnProperty('abc')	
+
+Object.keys(**);	A function maintain Object.keys() provide all elements from ** object
