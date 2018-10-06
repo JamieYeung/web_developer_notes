@@ -1,0 +1,123 @@
+OOP ##面向对象编程
+Class feature from ES6
+
+function bird() {
+  this.name = "jamie",
+  this.age = 28
+};
+===
+dove ={
+  name = "jamie",
+  age = 28
+}			NOTICE the this. is the class feature using.
+			like create a module for bird
+			called Constructors
+
+let dove = new bird()	create use module
+
+function bird() {
+  this.name = name,
+  this.color = color,
+  this.age = 28
+} 
+let dove = new bird("jamie", "white")
+			recive two aruguments name and color
+			NOTICE the Constructor this.name = name & this.color = color
+
+instanceof		key word for checking if it's a Instance for the Constructors
+			return true or false
+
+.constructor		return the real constructor for ALL things in constructor
+a.constructor === bird	return true or false
+			when change the prototype of constructor .constructor return undefined
+			Or can defined constructor: When setting prototype mannual
+
+a.prototype.isPrototypeOf(b)		
+			check a is the prototype of a similar with instanceof
+Object.prototype.isPrototypeOf(a.prototype)
+			in another words b is a's prototype and b has its own prototype
+			It's Object.prototype.isPrototpyeOf(a.prototype)
+		prototype chain made!!!
+		Object => a => b
+		in fact, everyone was typeof object
+		so everyone can us .hasOwnProperty
+
+bird.prototype.age = 28	ADD the age for bird prototype ##原型  .prototype
+
+	We don't repeat code
+	The principle called
+	Don't Repeat Yourself (DRY)
+	case hard to modify when have to
+	
+	So inheritance is used
+
+1.set the Object.prototype
+
+function Animal(){}
+Animal.prototype{
+  name = animal,
+  age = age,
+  eat = () => console.log("")
+};
+
+2.create the instance ##实例
+
+let ani = Object.create(Animal.prototype);
+				CREATE a new prototype under Object and set it to animal's
+THIS is similar as
+let ani = new Animal()
+BUT this one have some disadvantage PLZ SEARCH WHEN READ THIS
+
+				DONE this is inheritance
+
+.prototype		Like a recipe for creating an object ##对象
+
+function a(){}
+a.prototype = {
+ 1:1,
+ 2:2,
+ 3:3
+}
+
+function b(){}
+b.prototype = Object.create(a.prototype)
+			b totally inherint a's ALL prototypes keys everything
+
+			BUT when inherit from upper prototype also inherit ROOT constructor propertys
+		SO, How to JUST inherit from upper prototype?
+		Set   a.prototype.constructor = a;
+		
+		father function or values can be reset (override) in child
+		This is a chain for search if instance call a function or value
+
+1. instance => is eat() defined here? No
+2. child prototype => is eat() defined here? Yes.Execute it and stop search
+3. father prototype => is eat() defined here? Yes, but is already stop on child
+4. Object prototype => JavaScript top top object
+
+		Sometimes We find two different unrelated objects (prototypes) have the SAME function. What can we do?
+		create a function to save the same function of all objects
+
+		How to protect the instance's values hard to change?
+		use function for child prototype
+		and make the value be private DELETE this.
+		so the values only could change from the function
+		when call the function
+		ONLY child prototype accessed
+		instances are safe
+		this trick called CLOSURE ##封闭性
+
+
+IMPORTANT COMMING
+
+Immediately Invoked Function Expression (IIFE) ##立即执行函数的方法
+
+(function(){
+console.log("abc")
+})()			1. use No-name function
+			2. use() to wrap ##包住 function
+			3. use() call function at the end
+			When create function
+			run it immidiately
+Usually used in packup the realted functions 
+		
