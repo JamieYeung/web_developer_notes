@@ -1,0 +1,12 @@
+every function should be PURE FUNCTION.(pure function)
+no effect to any global variables or other functions
+
+RULE No.1	Don't change global variable when use function this called side effect #副作用
+RULE No.2	Use the arguments to make function flexible
+RULE No.3	functions are class objects in javascript try modify prototype
+
+.prototype.forEach()
+		like a for loop search every element for a array or objects
+
+HARD-TIME now try tommorow maybe
+
